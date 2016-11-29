@@ -1,0 +1,22 @@
+<?php
+
+function cardsprogrammatic_menu(){
+    $friends = array("joanne", "jillienne", "jinkumhopper");
+
+    $items = array();
+
+    for ($i = 0; $i < count($friends); $i++) {
+
+        $items['cards/' . $friends[$i]] = array(
+            'title' => $friends[$i],
+            'page callback' => 'show_friend',
+            'access callback' => TRUE,
+            'type' => MENU_NORMAL_ITEM,
+        );
+    };
+    return $items;
+}
+
+function show_friend() {
+    return '<h3>Dear ' . arg(1) . ', love ya.</h3>';
+}

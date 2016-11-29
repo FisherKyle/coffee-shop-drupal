@@ -1,0 +1,5 @@
+name = Cards Programmatic
+description = Create three menu links.
+package = Epicodus Examples
+core = 7.x
+files[] = cardsprogrammatic.module

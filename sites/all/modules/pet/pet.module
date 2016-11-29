@@ -1,0 +1,32 @@
+<?php
+function pet_menu(){
+    $items = array();
+    $items['pets_display'] = array(
+        'title' => 'Here are Pets!',
+        'page callback' => 'show_pet',
+        'access callback' => TRUE,
+        'type' => MENU_NORMAL_ITEM,
+    );
+    $items['pets_display/tab1'] = array(
+        'title' => 'Tab 1',
+        'page callback' => 'show_pet',
+        'access callback' => TRUE,
+        'type' => MENU_DEFAULT_LOCAL_TASK,
+    );
+    $items['pets_display/tab2'] = array(
+        'title' => 'Tab 2',
+        'page callback' => 'show_pet2',
+        'access callback' => TRUE,
+        'type' => MENU_LOCAL_TASK,
+    );
+
+    return $items;
+}
+
+function show_pet() {
+    return '<img src="sites/all/modules/pet/pet.jpg" alt="Responsive image">';
+}
+
+function show_pet2() {
+    return '<h3>Pet 2</h3>';
+}

@@ -1,0 +1,44 @@
+#header .section {
+  color: #ffffff;
+  background-image: url(/sites/default/files/sweaver/sweaver_image_6.jpg);
+  background-repeat: repeat-x;
+  background-attachment: scroll;
+  background-position: 50% 50%;
+}
+
+#page #header {
+  color: #ffffff;
+  background-color: #ffffff;
+  background-image: url(/sites/default/files/sweaver/sweaver_image_4.jpg);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: 50% 50%;
+  font-family: Helvetica,Arial,Sans-Serif;
+}
+
+a span {
+  font-family: Impact,Charcoal,Sans-Serif;
+}
+
+li a {
+  color: #000000;
+  font-weight: normal;
+}
+
+a img {
+  background-color: #ffffff;
+  background-image: none;
+  background-position: 0% 0%;
+  background-repeat: repeat-y;
+  border-top-color: #f7f7f7;
+  border-right-color: #f7f7f7;
+  border-bottom-color: #f7f7f7;
+  border-left-color: #f7f7f7;
+}
+
+.section a {
+  height: 66px;
+  width: 65px;
+  background-image: none;
+}
+

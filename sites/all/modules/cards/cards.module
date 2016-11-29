@@ -1,0 +1,35 @@
+<?php
+function cards_menu(){
+    $items = array();
+    $items['cards/joanne'] = array(
+        'title' => 'Joanne',
+        'page callback' => 'show_joanne',
+        'access callback' => TRUE,
+        'type' => MENU_NORMAL_ITEM,
+    );
+    $items['cards/jillienne'] = array(
+        'title' => 'Jillienne',
+        'page callback' => 'show_jillienne',
+        'access callback' => TRUE,
+        'type' => MENU_NORMAL_ITEM,
+    );
+    $items['cards/jinkumhopper'] = array(
+        'title' => 'Jinkumhopper',
+        'page callback' => 'show_jinkumhopper',
+        'access callback' => TRUE,
+        'type' => MENU_NORMAL_ITEM,
+    );
+    return $items;
+}
+
+function show_joanne() {
+    return '<h3>Dear Joanne, so glad I swiped right. And that you found this digital card. To you. Joanne. My dearest.</h3>';
+}
+
+function show_jillienne() {
+    return '<h3>Dear Jillienne, so glad I swiped right. And that you found this digital card. To you. Joanne. My dearest.</h3>';
+}
+
+function show_jinkumhopper() {
+    return '<h3>Dear Jinkumhopper, so glad I swiped right. And that you found this digital card. To you. Joanne. My dearest.</h3>';
+}
